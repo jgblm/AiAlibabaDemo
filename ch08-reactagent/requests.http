@@ -1,0 +1,63 @@
+### 1. 基础对话 - 使用默认 Agent
+POST http://localhost:8008/agent/chat
+Content-Type: application/json
+
+{
+  "message": "你好，请介绍一下自己",
+  "sessionId": "session001"
+}
+
+### 2. 代码助手对话
+POST http://localhost:8008/agent/code/chat
+Content-Type: application/json
+
+{
+  "message": "如何用 Java 编写一个单例模式？",
+  "sessionId": "session002"
+}
+
+### 3. 多轮对话 - 第一轮
+POST http://localhost:8008/agent/conversation?sessionId=session003
+Content-Type: application/json
+
+{
+  "message": "我想学习 Spring Boot，应该从哪里开始？"
+}
+
+### 4. 多轮对话 - 第二轮（展示记忆功能）
+POST http://localhost:8008/agent/conversation?sessionId=session003
+Content-Type: application/json
+
+{
+  "message": "那我需要学习哪些前置知识？"
+}
+
+### 5. 多轮对话 - 第三轮
+POST http://localhost:8008/agent/conversation?sessionId=session003
+Content-Type: application/json
+
+{
+  "message": "有没有推荐的學習资源？"
+}
+
+### 6. 获取会话信息
+GET http://localhost:8008/agent/session/session003
+
+### 7. 复杂任务处理 - 代码分析
+POST http://localhost:8008/agent/task
+Content-Type: application/json
+
+{
+  "task": "请帮我分析以下代码的问题并提出改进建议：\n\npublic class UserService {\n    public User getUser(Long id) {\n        Connection conn = DriverManager.getConnection(\"url\", \"user\", \"pass\");\n        Statement stmt = conn.createStatement();\n        ResultSet rs = stmt.executeQuery(\"SELECT * FROM users WHERE id = \" + id);\n        if (rs.next()) {\n            User user = new User();\n            user.setId(rs.getLong(\"id\"));\n            user.setName(rs.getString(\"name\"));\n            return user;\n        }\n        return null;\n    }\n}"
+}
+
+### 8. 复杂任务处理 - 算法问题
+POST http://localhost:8008/agent/task
+Content-Type: application/json
+
+{
+  "task": "请解释快速排序算法的原理，并提供 Java 实现"
+}
+
+### 9. 清除会话历史
+DELETE http://localhost:8008/agent/session/session003

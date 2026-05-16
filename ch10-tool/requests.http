@@ -1,0 +1,97 @@
+### ========== ch10-tool: Spring AI Tool (Function Calling) 示例 ==========
+
+### 1. 天气工具 - 查询当前天气
+POST http://localhost:8010/tool/weather
+Content-Type: application/json
+
+{
+  "message": "北京今天天气怎么样？"
+}
+
+### 2. 天气工具 - 查询天气预报
+POST http://localhost:8010/tool/weather
+Content-Type: application/json
+
+{
+  "message": "上海未来三天的天气如何？"
+}
+
+### 3. 计算器工具 - 加法
+POST http://localhost:8010/tool/calculator
+Content-Type: application/json
+
+{
+  "message": "123.45 加 678.9 等于多少？"
+}
+
+### 4. 计算器工具 - 平方根
+POST http://localhost:8010/tool/calculator
+Content-Type: application/json
+
+{
+  "message": "256 的平方根是多少？"
+}
+
+### 5. 计算器工具 - 百分比
+POST http://localhost:8010/tool/calculator
+Content-Type: application/json
+
+{
+  "message": "500 的 15% 是多少？"
+}
+
+### 6. 日期时间工具 - 当前时间
+POST http://localhost:8010/tool/datetime
+Content-Type: application/json
+
+{
+  "message": "现在几点了？今天是几号？"
+}
+
+### 7. 日期时间工具 - 日期差
+POST http://localhost:8010/tool/datetime
+Content-Type: application/json
+
+{
+  "message": "从2025-01-01到2025-12-31有多少天？"
+}
+
+### 8. 日期时间工具 - 星期几
+POST http://localhost:8010/tool/datetime
+Content-Type: application/json
+
+{
+  "message": "2025-10-01 是星期几？"
+}
+
+### 9. 智能工具 - 多工具自动选择
+POST http://localhost:8010/tool/smart
+Content-Type: application/json
+
+{
+  "message": "帮我看看上海明天天气如何，另外算一下 256 的平方根"
+}
+
+### 10. 智能工具 - 跨工具组合
+POST http://localhost:8010/tool/smart
+Content-Type: application/json
+
+{
+  "message": "告诉我现在的时间，然后查一下广州的天气，再算一下 200 乘以 3.5"
+}
+
+### 11. 引导式工具 - 旅行助手
+POST http://localhost:8010/tool/guided
+Content-Type: application/json
+
+{
+  "message": "我计划下周去北京出差，需要了解天气情况"
+}
+
+### 12. 引导式工具 - 旅行建议
+POST http://localhost:8010/tool/guided
+Content-Type: application/json
+
+{
+  "message": "我想这周末去杭州玩，你觉得怎么样？"
+}

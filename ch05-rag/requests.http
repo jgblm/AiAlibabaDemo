@@ -1,0 +1,32 @@
+### RAG 基础问答示例
+
+### 1. 基础 RAG 问答
+GET http://localhost:8005/api/rag/ask?question=什么是Spring+AI
+
+### 2. 询问 RAG 技术
+GET http://localhost:8005/api/rag/ask?question=RAG+是如何工作的
+
+### 3. 询问 VectorStore
+GET http://localhost:8005/api/rag/ask?question=解释一下+VectorStore
+
+### 4. 询问 Embedding
+GET http://localhost:8005/api/rag/ask?question=什么是+Embedding
+
+### 高级 RAG 示例
+
+### 5. 高级 RAG 问答（自定义参数）
+GET http://localhost:8005/api/rag/ask-advanced?question=SimpleVectorStore+有什么特点
+
+### 6. 带系统提示词的 RAG 问答
+GET http://localhost:8005/api/rag/ask-with-system?question=QuestionAnswerAdvisor+的作用是什么
+
+### 向量库搜索示例
+
+### 7. 直接搜索相关文档
+GET http://localhost:8005/api/rag/search?query=Spring+AI
+
+### 8. 搜索 RAG 相关文档
+GET http://localhost:8005/api/rag/search?query=RAG+检索增强
+
+### 9. 搜索 Embedding 相关文档
+GET http://localhost:8005/api/rag/search?query=文本嵌入向量

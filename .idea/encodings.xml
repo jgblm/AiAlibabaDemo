@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ch01-simple/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch01-simple/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch02-multi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch02-multi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch03-chatclient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch03-chatclient/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04-embedding/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04-embedding/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch05-rag/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch05-rag/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06-prompt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06-prompt/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch07-format-output/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch07-format-output/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch08-reactagent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch08-reactagent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch09-image/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch09-image/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch10-tool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch10-tool/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

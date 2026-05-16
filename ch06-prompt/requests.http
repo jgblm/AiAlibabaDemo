@@ -1,0 +1,31 @@
+### 1. 基础 Prompt 使用 - 直接传入字符串
+GET http://localhost:8006/prompt/basic?q=请简单介绍一下你自己
+
+### 2. 使用 Prompt 对象 - 封装用户消息
+GET http://localhost:8006/prompt/object?q=什么是机器学习？
+
+### 3. 使用 PromptTemplate - 模板化 Prompt
+GET http://localhost:8006/prompt/template?name=李四&city=上海
+
+### 4. 带系统消息的 Prompt - 设置角色和上下文
+GET http://localhost:8006/prompt/system?q=解释一下什么是云计算
+
+### 5. 多轮对话 Prompt - 包含对话历史
+GET http://localhost:8006/prompt/conversation
+
+### 6. 使用 ChatClient 和 Prompt - 更高级的 API
+GET http://localhost:8006/prompt/chatclient?topic=微服务
+
+### 7. 流式 Prompt 响应（使用 curl 测试）
+# 注意：浏览器访问可能会等待全部完成后才显示，建议使用 curl 或 Postman 测试
+# curl -N http://localhost:8006/prompt/stream?q=写一首关于夏天的诗
+GET http://localhost:8006/prompt/stream?q=写一首关于夏天的诗
+
+### 8. 带参数的模板 Prompt - 动态生成提示词
+GET http://localhost:8006/prompt/parametric?language=Python&level=中级
+
+### 9. 角色扮演 Prompt - 让 AI 扮演特定角色
+GET http://localhost:8006/prompt/roleplay?role=技术顾问&position=前端开发工程师
+
+### 10. 格式化输出 Prompt - 要求特定格式的回答
+GET http://localhost:8006/prompt/format?topic=Docker容器技术

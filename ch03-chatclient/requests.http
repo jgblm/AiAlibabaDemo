@@ -1,0 +1,41 @@
+###
+POST http://localhost:8003/advanced/structured-json
+Content-Type: application/json
+
+{
+  "topic": "xiaomi note pro"
+}
+
+<> 2026-05-03T212013.200.txt
+
+###
+GET http://localhost:8003/advanced/role-play?
+    role=doctor&
+    question=i have a headache
+
+<> 2026-05-03T212222.200.txt
+
+###
+POST http://localhost:8003/advanced/summarize
+Content-Type: application/json
+
+{
+  "text": "The quick brown fox jumps over the lazy dog.",
+  "max_length": 20
+}
+
+<> 2026-05-03T212336.200.txt
+
+###
+GET http://localhost:8003/advanced/code-generation?
+    language=python&
+    requirement=sort a list
+
+<> 2026-05-03T212441.200.txt
+
+###
+GET http://localhost:8003/advanced/translate?
+    text=你也许会希望有个可以放假的星期八&
+    targetLang=en
+
+<> 2026-05-03T212550.200.txt

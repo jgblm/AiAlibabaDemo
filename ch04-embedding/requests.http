@@ -1,0 +1,33 @@
+### 基础 Embedding 示例
+
+### 1. 单个文本嵌入
+GET http://localhost:8004/api/embedding/single?text=我喜欢编程
+
+### 2. 批量文本嵌入
+POST http://localhost:8004/api/embedding/batch
+Content-Type: application/json
+
+["我喜欢编程", "机器学习很有趣", "深度学习"]
+
+### 3. 高级嵌入（带元数据）
+GET http://localhost:8004/api/embedding/advanced?text=Spring+AI+很强大
+
+### 相似度计算示例
+
+### 4. 比较两个文本的相似度
+GET http://localhost:8004/api/similarity/compare?text1=我喜欢编程&text2=我热爱编码
+
+### 5. 语义搜索
+POST http://localhost:8004/api/similarity/search
+Content-Type: application/json
+
+{
+  "query": "人工智能技术",
+  "documents": [
+    "机器学习是AI的重要分支",
+    "深度学习用于图像识别和自然语言处理",
+    "Python是一种流行的编程语言",
+    "神经网络模拟人脑的工作方式",
+    "今天天气真不错"
+  ]
+}

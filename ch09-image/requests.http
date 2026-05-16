@@ -1,0 +1,61 @@
+### 1. 基础图片生成
+POST http://localhost:8009/image/generate
+Content-Type: application/json
+
+{
+  "prompt": "一只可爱的猫咪坐在窗台上，阳光透过窗户洒进来，温馨的氛围"
+}
+
+### 2. 自定义尺寸和质量
+POST http://localhost:8009/image/generate/custom
+Content-Type: application/json
+
+{
+  "prompt": "一个未来主义的城市景观，霓虹灯闪烁，赛博朋克风格",
+  "size": "1024x1024",
+  "quality": "standard"
+}
+
+### 3. 批量生成多张图片
+POST http://localhost:8009/image/generate/batch
+Content-Type: application/json
+
+{
+  "prompt": "一朵盛开的玫瑰花，红色花瓣，露珠点缀",
+  "count": 2
+}
+
+### 4. 艺术风格图片生成
+POST http://localhost:8009/image/generate/artistic
+Content-Type: application/json
+
+{
+  "subject": "山水风景",
+  "style": "中国水墨画风格"
+}
+
+### 5. 产品效果图生成
+POST http://localhost:8009/image/generate/product
+Content-Type: application/json
+
+{
+  "product": "智能手表",
+  "scene": "大理石纹理的桌面，柔和的自然光"
+}
+
+### 6. 风景照片
+POST http://localhost:8009/image/generate
+Content-Type: application/json
+
+{
+  "prompt": "日落时分的海滩，金色的阳光洒在海面上，远处有帆船"
+}
+
+### 7. 抽象艺术
+POST http://localhost:8009/image/generate/artistic
+Content-Type: application/json
+
+{
+  "subject": "音乐和舞蹈",
+  "style": "抽象表现主义，色彩斑斓"
+}

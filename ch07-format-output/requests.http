@@ -1,0 +1,17 @@
+### 1. 提取人物信息 - 使用 BeanOutputConverter
+GET http://localhost:8007/format/person?text=我叫张三，今年28岁，是一名软件工程师，目前居住在北京。我热爱编程和技术分享。
+
+### 2. 提取书籍信息
+GET http://localhost:8007/format/book?description=《Java编程思想》是由Bruce Eckel编写的一本经典Java教程，这本书深入浅出地讲解了Java的核心概念，适合中高级开发者阅读，评分4.8分，标签包括Java、编程、面向对象。
+
+### 3. 获取天气信息 - 使用 entity() 方法
+GET http://localhost:8007/format/weather?city=上海
+
+### 4. 提取多个人物信息 - 列表数据
+GET http://localhost:8007/format/persons
+
+### 5. 自定义格式 - 生成结构化信息
+GET http://localhost:8007/format/custom?topic=机器学习
+
+### 6. 产品评论分析 - 情感分析
+GET http://localhost:8007/format/review?review=这款手机真的很棒！屏幕清晰，运行流畅，拍照效果出色。但是电池续航有点短，希望能改进。总体来说性价比很高，推荐购买。
