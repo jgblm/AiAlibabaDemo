@@ -1,0 +1,29 @@
+server:
+  port: 8011
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: mcp-client
+
+  ai:
+    openai:
+      api-key: sk-xxx
+      base-url: base-url
+
+    mcp:
+      client:
+        type: async
+        request-timeout: 60s
+        toolcallback:
+          enabled: true
+
+        streamable-http:
+          connections:
+            mcp-server1:
+              url: http://localhost:8099
+              endpoint: /mcp

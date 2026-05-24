@@ -19,6 +19,7 @@
         <module>ch08-reactagent</module>
         <module>ch09-image</module>
         <module>ch10-tool</module>
+        <module>ch11-mcp</module>
     </modules>
 
     <properties>

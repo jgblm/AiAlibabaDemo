@@ -1,0 +1,14 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: mcp-server-demo
+
+  ai:
+    mcp:
+      server:
+        type: async
+        protocol: STREAMABLE
+        name: customer-define-mcp-server
+        version: 1.0.0
