@@ -20,6 +20,7 @@
         <module>ch09-image</module>
         <module>ch10-tool</module>
         <module>ch11-mcp</module>
+        <module>ch12-mcp-baidu</module>
     </modules>
 
     <properties>

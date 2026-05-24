@@ -1,0 +1,27 @@
+server:
+  port: 8012
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: mcp-baidu
+
+  ai:
+    openai:
+      api-key: sk-xxx
+      base-url: base-url
+      chat:
+        options:
+          model: deepseek-v4-flash
+
+    mcp:
+      client:
+        request-timeout: 20s
+        toolcallback:
+          enabled: true
+        stdio:
+          servers-configuration: classpath:/mcp-server.json5
